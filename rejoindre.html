@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rejoindre un salon PitchQuizz</title>
+<meta name="description" content="Un ami t'invite dans son salon PitchQuizz.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Barlow:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Lien d'invitation (16 oct. 2026) : pitchquizz.com/rejoindre?code=XXXXXX. Ouvre l'appli sur « Entre amis » avec le code
+     pré-rempli (adresse projetfoot://salons?code=…, schéma défini dans app/app.json). Sans l'appli : le code reste affiché. -->
+<main>
+  <a class="marque" href="./">PITCH<b>QUIZZ</b></a>
+  <h1>Un ami <span>t'invite</span></h1>
+  <p>Rejoins son salon pour jouer en direct.</p>
+  <section>
+    <h2>Code du salon</h2>
+    <div class="code" id="code">······</div>
+  </section>
+  <a class="bouton" id="ouvrir" href="#">Ouvrir dans PitchQuizz</a>
+  <p>Pas encore l'appli ? Installe-la, ouvre « Rejoindre un salon avec un code » et tape le code ci-dessus.</p>
+  <div class="pied"><a href="./">Accueil</a><a href="support.html">Aide</a></div>
+</main>
+<script>
+  var brut = new URLSearchParams(location.search).get("code") || location.hash.slice(1) || "";
+  var code = brut.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6);
+  if (code) document.getElementById("code").textContent = code;
+  document.getElementById("ouvrir").href = "projetfoot://salons" + (code ? "?code=" + code : "");
+</script>
+</body>
+</html>

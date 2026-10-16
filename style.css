@@ -1,0 +1,26 @@
+/* Site pitchquizz.com (16 oct. 2026) : même DA « Stade de nuit » que l'appli, un seul thème sombre voulu.
+   Couleurs et polices = app/src/theme.ts. */
+:root {
+  --nuit: #070f26; --panneau: #101f48; --ligne: #22356e; --craie: #f2f5ff; --texte2: #c3cdea; --texte3: #8896c0;
+  --jaune: #f5d90a; --cyan: #3fd0ff;
+  --titre: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif; --texte: "Barlow", system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(120% 60% at 50% 0%, #10275e 0%, var(--nuit) 60%) fixed, var(--nuit); color: var(--craie); font-family: var(--texte); font-weight: 500; line-height: 1.55; }
+main { max-width: 680px; margin: 0 auto; padding-block: 32px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 14px; }
+a { color: var(--cyan); }
+.marque { font-family: var(--titre); font-style: italic; font-weight: 900; font-size: 24px; letter-spacing: .02em; text-decoration: none; color: var(--craie); }
+.marque b { color: var(--jaune); }
+h1 { font-family: var(--titre); font-style: italic; font-weight: 900; font-size: clamp(40px, 9vw, 64px); line-height: .95; text-transform: uppercase; margin: 8px 0 4px; text-wrap: balance; }
+h1 span { color: var(--jaune); }
+.date { color: var(--texte3); font-size: 14px; margin: 0 0 8px; }
+section { background: var(--panneau); border: 1px solid var(--ligne); border-radius: 18px; padding: 16px 18px; }
+h2 { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); margin: 0 0 6px; }
+p { margin: 0; color: var(--texte2); font-size: 16px; }
+.jeux { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.jeu { background: var(--panneau); border: 1.5px solid var(--ligne); border-radius: 16px; padding: 14px; font-family: var(--titre); font-style: italic; font-weight: 800; font-size: 20px; text-transform: uppercase; }
+.bouton { display: block; text-align: center; background: var(--jaune); color: #0a1430; font-family: var(--titre); font-style: italic; font-weight: 900; font-size: 24px; text-transform: uppercase; text-decoration: none; border-radius: 16px; padding: 14px 18px; }
+.bouton.second { background: transparent; color: var(--craie); border: 1.5px solid var(--ligne); font-size: 18px; }
+.code { font-family: var(--titre); font-style: italic; font-weight: 900; font-size: 48px; letter-spacing: .18em; text-align: center; color: var(--cyan); }
+.pied { color: var(--texte3); font-size: 13px; text-align: center; margin-top: 12px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
