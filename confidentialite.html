@@ -9,18 +9,24 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Même texte que l'écran Confidentialité de l'appli (app/src/app/confidentialite.tsx). À faire relire par un juriste avant la sortie. -->
+<!-- Même contenu que l'écran Confidentialité de l'appli (app/src/app/confidentialite.tsx). Mise à jour du 19 oct. 2026 : prestataires (Fly.io, Expo), mesures réelles, nationalité, présence en ligne. -->
 <main>
   <a class="marque" href="./">PITCH<b>QUIZZ</b></a>
   <h1>Confidentialité</h1>
-  <p class="date">Octobre 2026. Ce texte décrit ce que fait l'application ; il sera relu par un juriste avant la sortie publique.</p>
-    <section><h2>Ce que nous gardons</h2><p>Ton pseudo, ton année de naissance (jamais affichée), ton équipe favorite, tes parties (scores, carte de joueur, jours joués), tes amis, tes réglages « Mon stade » (que ton adversaire voit quand il joue chez toi en ligne) et les messages que tu nous envoies depuis « Nous écrire » (avec la version de l'appli et le modèle du téléphone). Pas de nom, pas d'adresse e-mail, pas de photo, pas de localisation, pas de contacts.</p></section>
-    <section><h2>Pourquoi</h2><p>Pour faire fonctionner le jeu : tes parties et ta progression, le classement, les amis et le jeu en ligne. L'année de naissance sert seulement à adapter l'appli à ton âge (13 ans minimum, mode protégé jusqu'à 14 ans).</p></section>
-    <section><h2>Où</h2><p>Sur ton téléphone et sur nos serveurs Supabase, en Europe (Paris).</p></section>
-    <section><h2>Statistiques et plantages</h2><p>Si tu as 15 ans ou plus et que tu ne les coupes pas, des statistiques d'usage anonymes (PostHog, en Europe) nous disent quels écrans sont utilisés, sans localisation ni enregistrement d'écran. Les plantages sont envoyés à Sentry (en Europe), sans données personnelles. En mode protégé, aucune statistique d'usage n'est envoyée.</p></section>
+  <p class="date">Mise à jour : 19 octobre 2026.</p>
+    <section><h2>Ce que nous gardons</h2><p>Ton pseudo, ton année de naissance (jamais affichée), ta nationalité et ton équipe favorite si tu les choisis (affichées sur ta carte de joueur), tes parties (scores, carte de joueur, flammes, jours joués), tes amis, tes réglages « Mon stade » (que ton adversaire voit quand il joue chez toi en ligne) et les messages que tu nous envoies depuis « Nous écrire » (avec la version de l'appli et le modèle du téléphone). Pas de nom, pas d'adresse e-mail, pas de photo, pas de localisation, pas de contacts.</p></section>
+    <section><h2>Pourquoi</h2><p>Pour faire fonctionner le jeu : tes parties et ta progression, le classement, les amis et le jeu en ligne. L'année de naissance sert seulement à adapter l'appli à ton âge (13 ans minimum, mode protégé jusqu'à 14 ans). Quand tu es connecté, tes amis voient si tu es « en ligne » ou « en partie ».</p></section>
+    <section><h2>Où et par qui</h2><p>Sur ton téléphone et chez nos prestataires (les données du jeu restent en Europe) :</p>
+      <p>• <b>Supabase</b> (Paris) : ton compte, tes parties, ta carte, tes amis, tes messages.<br>
+      • <b>Fly.io</b> (Paris) : le serveur des parties en ligne. Il reçoit tes actions de jeu et ton identifiant de connexion pendant la partie, et n'en garde rien ensuite.<br>
+      • <b>Expo</b> (États-Unis) : envoie les mises à jour de l'appli ; pour cela, ton téléphone le contacte à l'ouverture (adresse internet et modèle du téléphone, à des fins techniques uniquement).<br>
+      • <b>PostHog</b> (Europe) : statistiques d'usage, voir ci-dessous.<br>
+      • <b>Sentry</b> (données en Europe) : rapports de plantage.</p></section>
+    <section><h2>Statistiques et plantages</h2><p>Si tu as 15 ans ou plus, des statistiques d'usage nous aident à améliorer le jeu : un identifiant anonyme propre à ton appareil (jamais relié à ton compte ni à ton pseudo), le modèle du téléphone, la version du système et de l'appli, et ce qui se passe dans l'appli (ouverture, parties terminées ou abandonnées avec le jeu, le mode et le résultat, recherches d'adversaire, création de profil ou de salon). Jamais de localisation ni d'enregistrement d'écran. Tu peux les couper à tout moment dans Réglages. Les plantages sont envoyés à Sentry, sans pseudo ni donnée personnelle. En mode protégé, aucune statistique d'usage n'est envoyée.</p></section>
     <section><h2>Mode protégé (13–14 ans)</h2><p>Pseudo masqué dans le classement mondial et pour les adversaires inconnus, statistiques d'usage coupées, amis ajoutés seulement avec ton code. Il n'y a de chat nulle part dans l'appli.</p></section>
     <section><h2>Publicité et achats</h2><p>Aucune publicité, aucun achat, aucune revente de données. L'appli est gratuite.</p></section>
-    <section><h2>Effacer tes données</h2><p>Dans l'appli : Réglages → « Supprimer mon compte » efface immédiatement et pour toujours ton compte et tout ce qui y est lié.</p></section>
+    <section><h2>Combien de temps</h2><p>Tes données de compte sont gardées tant que ton compte existe. Si l'appli n'est pas ouverte, rien n'est collecté.</p></section>
+    <section><h2>Effacer tes données</h2><p>Dans l'appli : Réglages → « Supprimer mon compte » efface immédiatement et pour toujours ton compte et tout ce qui y est lié. Tu peux aussi nous le demander par e-mail.</p></section>
     <section><h2>Nous contacter</h2><p>Dans l'appli : Réglages → « Nous écrire », ou par e-mail : <a href="mailto:contact@pitchquizz.com">contact@pitchquizz.com</a>. Un parent qui pense que son enfant a moins de 13 ans peut nous le signaler de la même façon : le compte sera supprimé.</p></section>
     <section><h2>Questions et sources</h2><p>Chaque question est vérifiée par deux sources (Wikipédia, Wikidata) et cite la sienne. Tu peux signaler une erreur depuis la question.</p></section>
   <div class="pied"><a href="./">Accueil</a><a href="support.html">Aide et contact</a></div>
