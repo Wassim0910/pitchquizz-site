@@ -1,34 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PitchQuizz</title>
-<meta name="description" content="PitchQuizz : des jeux de culture foot. En ligne contre de vrais joueurs, ou hors ligne pour t'entraîner.">
-<link rel="icon" href="icon.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Barlow:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main>
-  <a class="marque" href="./">PITCH<b>QUIZZ</b></a>
-  <h1>Le foot <span>version</span> cerveau</h1>
-  <p>Des jeux de culture foot. En ligne contre de vrais joueurs pour faire monter ta carte, hors ligne pour t'entraîner. Gratuit, sans pub.</p>
-  <div class="jeux">
-    <div class="jeu">Quizz</div>
-    <div class="jeu">2 Clubs → 1 Joueur</div>
-    <div class="jeu">Devine le joueur</div>
-    <div class="jeu">Maximum de joueurs</div>
-    <div class="jeu">Morpion foot</div>
-    <div class="jeu">Le Onze</div>
-    <div class="jeu">Les Enchères</div>
-    <div class="jeu">Undercover entre amis</div>
-  </div>
-  <section>
-    <h2>Bientôt sur l'App Store</h2>
-    <p>PitchQuizz est en test. La sortie sur iPhone arrive très vite, Android ensuite.</p>
-  </section>
-  <div class="pied"><a href="confidentialite.html">Confidentialité</a><a href="support.html">Aide et contact</a></div>
-</main>
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PitchQuizz : quiz foot en ligne</title>
+    <meta name="description" content="Quiz foot et jeux de culture football en ligne contre de vrais joueurs : Quizz, 2 Clubs 1 Joueur, Devine le joueur, Morpion foot, Maximum de joueurs, Le Onze. Gratuit, dans le navigateur ou sur l'appli.">
+    <meta name="theme-color" content="#070f26">
+    <meta property="og:title" content="PitchQuizz : le foot version cerveau">
+    <meta property="og:description" content="Affronte de vrais joueurs en ligne, défie tes amis, fais monter ta carte.">
+    <meta property="og:image" content="https://pitchquizz.com/apple-touch-icon.png">
+    <meta property="og:url" content="https://pitchquizz.com/">
+    <meta name="apple-itunes-app" content="app-id=6822024828">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+        background: #070f26;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/favicon.ico"/></head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/_expo/static/js/web/index-b7c954d37a74942aa13242546c40b837.js" defer></script>
 </body>
 </html>

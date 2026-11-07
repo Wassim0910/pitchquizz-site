@@ -21,7 +21,8 @@
     <div class="code" id="code">······</div>
   </section>
   <a class="bouton" id="ouvrir" href="#">Ouvrir dans PitchQuizz</a>
-  <p>Pas encore l'appli ? Installe-la, ouvre « Rejoindre un salon avec un code » et tape le code ci-dessus.</p>
+  <a class="bouton second" id="navigateur" href="/salons">Jouer dans le navigateur</a>
+  <p>Pas encore l'appli ? Joue directement dans le navigateur, ou installe-la, ouvre « Jouer avec des amis » et tape le code ci-dessus.</p>
   <div class="pied"><a href="./">Accueil</a><a href="support.html">Aide</a></div>
 </main>
 <script>
@@ -29,6 +30,7 @@
   var code = brut.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6);
   if (code) document.getElementById("code").textContent = code;
   document.getElementById("ouvrir").href = "projetfoot://salons" + (code ? "?code=" + code : "");
+  document.getElementById("navigateur").href = "/salons" + (code ? "?code=" + code : "");
 </script>
 </body>
 </html>
