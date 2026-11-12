@@ -24,3 +24,22 @@ p { margin: 0; color: var(--texte2); font-size: 16px; }
 .bouton.second { background: transparent; color: var(--craie); border: 1.5px solid var(--ligne); font-size: 18px; }
 .code { font-family: var(--titre); font-style: italic; font-weight: 900; font-size: 48px; letter-spacing: .18em; text-align: center; color: var(--cyan); }
 .pied { color: var(--texte3); font-size: 13px; text-align: center; margin-top: 12px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+/* Pages des jeux pour Google (12 nov. 2026, tools/site/pages_seo.py) */
+.intro { font-size: 18px; color: var(--craie); }
+.actions { display: flex; flex-direction: column; gap: 10px; }
+.petit { font-size: 13px; color: var(--texte3); text-align: center; }
+section ul, section ol { margin: 4px 0 0; padding-left: 22px; color: var(--texte2); display: flex; flex-direction: column; gap: 6px; }
+section li b { color: var(--craie); }
+a.jeu { color: var(--craie); text-decoration: none; }
+a.jeu:hover { border-color: var(--cyan); }
+figure { margin: 0; display: flex; justify-content: center; }
+figure img { width: 100%; max-width: 300px; height: auto; border-radius: 18px; border: 1px solid var(--ligne); }
+details { border-top: 1px solid var(--ligne); padding: 10px 0; }
+details:first-of-type { border-top: 0; }
+summary { cursor: pointer; color: var(--craie); font-weight: 600; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸ "; color: var(--jaune); }
+details[open] summary::before { content: "▾ "; }
+.choix { display: block; font-weight: 500; font-size: 14px; color: var(--texte3); margin-top: 2px; }
+details p { margin-top: 6px; }
+details p b { color: var(--jaune); }
