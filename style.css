@@ -43,3 +43,5 @@ details[open] summary::before { content: "▾ "; }
 .choix { display: block; font-weight: 500; font-size: 14px; color: var(--texte3); margin-top: 2px; }
 details p { margin-top: 6px; }
 details p b { color: var(--jaune); }
+.galerie { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.galerie img { width: 100px; height: auto; border-radius: 12px; border: 1px solid var(--ligne); display: block; }
