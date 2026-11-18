@@ -43,7 +43,14 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/_expo/static/js/web/index-8608aafea67fd7a21c58bd625eceefa0.js" defer></script>
+    <div id="root"><div id="pq-charge" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#070f26;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#f2f5ff;text-align:center;padding:24px">
+<img src="/icone-192.png" alt="PitchQuizz" width="96" height="96" style="border-radius:22px;box-shadow:0 0 40px rgba(245,217,10,.35)">
+<div style="font-weight:900;font-style:italic;font-size:30px;letter-spacing:.5px;text-transform:uppercase">Pitch<span style="color:#f5d90a">Quizz</span></div>
+<div style="width:46px;height:46px;border-radius:50%;border:4px solid #22356e;border-top-color:#f5d90a;animation:pqtourne .9s linear infinite"></div>
+<div id="pq-charge-t" style="font-size:16px;font-weight:600;color:#9aa8d1">Chargement du match…</div>
+<style>@keyframes pqtourne{to{transform:rotate(360deg)}}</style>
+<script>(function(){var l=(navigator.language||"fr").slice(0,2),m={en:"Loading the match…",es:"Cargando el partido…",it:"Caricamento della partita…",pt:"Carregando a partida…"};if(m[l])document.getElementById("pq-charge-t").textContent=m[l];})();</script>
+</div></div>
+  <script src="/_expo/static/js/web/index-600c5a92f731582e2fd3d0640270110f.js" defer></script>
 </body>
 </html>
